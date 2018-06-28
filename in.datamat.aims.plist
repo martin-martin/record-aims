@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+        <string>in.datamat.aims</string>
+    <key>WorkingDirectory</key>
+        <string>/Users/martin/Documents/projects/aims/</string>
+    <key>ProgramArguments</key>
+        <array>
+            <string>/bin/bash</string>
+            <string>-c</string>
+            <string>cwd=`pwd`;d=`date "+%Y_%m_%d"`;blank="$cwd/records/blank.txt";aim="$cwd/records/aims-$d.txt";cp $blank $aim;open $aim;</string>
+        </array>
+    <key>StartCalendarInterval</key>
+        <array>
+            <dict>
+                <key>Weekday</key>
+                <integer>4</integer>
+                <key>Hour</key>
+                <integer>7</integer>
+                <key>Minute</key>
+                <integer>0</integer>
+            </dict>
+            <dict>
+                <key>Weekday</key>
+                <integer>7</integer>
+                <key>Hour</key>
+                <integer>20</integer>
+                <key>Minute</key>
+                <integer>0</integer>
+            </dict>
+        </array>
+    <key>StandardErrorPath</key>
+        <string>/Users/martin/Documents/projects/aims/log.err</string>
+</dict>
+</plist>
