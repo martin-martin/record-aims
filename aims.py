@@ -4,7 +4,7 @@ from crontab import CronTab
 
 
 # getting absolute path of user's files
-dir_path = os.path.dirname(os.path.realpath(__file__)) + "/"
+dir_path = os.path.dirname(os.path.realpath(__file__)) + "/records/"
 blank_file_name = 'blank.txt'
 
 # initiate crontab object
